@@ -11,6 +11,7 @@
 		FF59AB502BCBE32900A458AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF59AB4F2BCBE32900A458AD /* ContentView.swift */; };
 		FF59AB522BCBE32A00A458AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF59AB512BCBE32A00A458AD /* Assets.xcassets */; };
 		FF59AB552BCBE32A00A458AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF59AB542BCBE32A00A458AD /* Preview Assets.xcassets */; };
+		FF59AB5C2BCBEE3F00A458AD /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = FF59AB5B2BCBEE3F00A458AD /* Sounds */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		FF59AB4F2BCBE32900A458AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FF59AB512BCBE32A00A458AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF59AB542BCBE32A00A458AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FF59AB5B2BCBEE3F00A458AD /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		FF59AB4C2BCBE32900A458AD /* HoneymoonSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				FF59AB5B2BCBEE3F00A458AD /* Sounds */,
 				FF59AB4D2BCBE32900A458AD /* HoneymoonSwiftUIApp.swift */,
 				FF59AB4F2BCBE32900A458AD /* ContentView.swift */,
 				FF59AB512BCBE32A00A458AD /* Assets.xcassets */,
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF59AB5C2BCBEE3F00A458AD /* Sounds in Resources */,
 				FF59AB552BCBE32A00A458AD /* Preview Assets.xcassets in Resources */,
 				FF59AB522BCBE32A00A458AD /* Assets.xcassets in Resources */,
 			);
@@ -278,8 +282,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,8 +310,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
