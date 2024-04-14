@@ -12,6 +12,7 @@
 		FF59AB522BCBE32A00A458AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF59AB512BCBE32A00A458AD /* Assets.xcassets */; };
 		FF59AB552BCBE32A00A458AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF59AB542BCBE32A00A458AD /* Preview Assets.xcassets */; };
 		FF59AB5C2BCBEE3F00A458AD /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = FF59AB5B2BCBEE3F00A458AD /* Sounds */; };
+		FF59AB5E2BCBF0B600A458AD /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF59AB5D2BCBF0B600A458AD /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,8 @@
 		FF59AB512BCBE32A00A458AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF59AB542BCBE32A00A458AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FF59AB5B2BCBEE3F00A458AD /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
+		FF59AB5D2BCBF0B600A458AD /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		FF59AB5F2BCC24C500A458AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,11 +56,13 @@
 		FF59AB4C2BCBE32900A458AD /* HoneymoonSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				FF59AB5F2BCC24C500A458AD /* Info.plist */,
 				FF59AB5B2BCBEE3F00A458AD /* Sounds */,
 				FF59AB4D2BCBE32900A458AD /* HoneymoonSwiftUIApp.swift */,
 				FF59AB4F2BCBE32900A458AD /* ContentView.swift */,
 				FF59AB512BCBE32A00A458AD /* Assets.xcassets */,
 				FF59AB532BCBE32A00A458AD /* Preview Content */,
+				FF59AB5D2BCBF0B600A458AD /* Launch Screen.storyboard */,
 			);
 			path = HoneymoonSwiftUI;
 			sourceTree = "<group>";
@@ -130,6 +135,7 @@
 			files = (
 				FF59AB5C2BCBEE3F00A458AD /* Sounds in Resources */,
 				FF59AB552BCBE32A00A458AD /* Preview Assets.xcassets in Resources */,
+				FF59AB5E2BCBF0B600A458AD /* Launch Screen.storyboard in Resources */,
 				FF59AB522BCBE32A00A458AD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,9 +285,11 @@
 				DEVELOPMENT_TEAM = VYT9YM6M52;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HoneymoonSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -307,9 +315,11 @@
 				DEVELOPMENT_TEAM = VYT9YM6M52;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HoneymoonSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
