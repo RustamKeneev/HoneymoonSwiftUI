@@ -16,6 +16,7 @@
 		FFC5A3CD2BCC395800948E51 /* HoneymoonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC5A3CC2BCC395800948E51 /* HoneymoonModel.swift */; };
 		FFC5A3D02BCC39F700948E51 /* HoneymoonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC5A3CF2BCC39F700948E51 /* HoneymoonData.swift */; };
 		FFC5A3D42BCC3B4600948E51 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC5A3D32BCC3B4600948E51 /* CardView.swift */; };
+		FFC5A3D62BCD76F800948E51 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC5A3D52BCD76F800948E51 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		FFC5A3CC2BCC395800948E51 /* HoneymoonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneymoonModel.swift; sourceTree = "<group>"; };
 		FFC5A3CF2BCC39F700948E51 /* HoneymoonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneymoonData.swift; sourceTree = "<group>"; };
 		FFC5A3D32BCC3B4600948E51 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		FFC5A3D52BCD76F800948E51 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			children = (
 				FF59AB4F2BCBE32900A458AD /* ContentView.swift */,
 				FFC5A3D32BCC3B4600948E51 /* CardView.swift */,
+				FFC5A3D52BCD76F800948E51 /* HeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFC5A3D02BCC39F700948E51 /* HoneymoonData.swift in Sources */,
+				FFC5A3D62BCD76F800948E51 /* HeaderView.swift in Sources */,
 				FFC5A3D42BCC3B4600948E51 /* CardView.swift in Sources */,
 				FFC5A3CD2BCC395800948E51 /* HoneymoonModel.swift in Sources */,
 				FF59AB502BCBE32900A458AD /* ContentView.swift in Sources */,
