@@ -10,10 +10,11 @@ import SwiftUI
 struct ContentView: View {
     //MARK: - PROPERTIES
     @State var showAlert: Bool = false
+    @State var showGuide: Bool = false
 
     var body: some View {
         VStack {
-            HeaderView()
+            HeaderView(showGuedeView: $showGuide)
             Spacer()
             CardView(honeymoon: honeymoonData[1])
                 .padding()
