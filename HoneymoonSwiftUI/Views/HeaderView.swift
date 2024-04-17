@@ -10,16 +10,22 @@ import SwiftUI
 struct HeaderView: View {
     //MARK: - PROPERTIES
     @Binding var showGuedeView: Bool
+    @Binding var showInfoView: Bool
+    
 
     var body: some View {
         HStack {
             Button(action: {
                 //ACTION
+                self.showInfoView.toggle()
                 print("Info")
             }){
                 Image(systemName: "info.circle")
                     .font(.system(size: 24, weight: .regular))
-                    .accentColor(Color.primary) // Перенесено сюда
+                    .accentColor(Color.primary)
+            }
+            .sheet(isPresented: $showInfoView){
+                InfoView() 
             }
             Spacer()
             Image("logo-honeymoon-pink")
@@ -53,7 +59,7 @@ struct HeaderView: View {
 
 struct HeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        HeaderView(showGuedeView: .constant(false))
+        HeaderView(showGuedeView: .constant(false), showInfoView: .constant(false))
             .previewLayout(.fixed(width: 375, height: 80))
     }
 }
