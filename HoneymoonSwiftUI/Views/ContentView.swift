@@ -13,17 +13,30 @@ struct ContentView: View {
     @State var showGuide: Bool = false
     @State var showInfo: Bool = false
     @GestureState private var dragState = DrageState.inactive
-    
+
     private var dragAreaThreshold: CGFloat = 65.0
+
+    @State private var lastCardIndex: Int = 1
+ 
     
     //MARK: - CARD VIEWS
-    var cardViews: [CardView] = {
+    @State var cardViews: [CardView] = {
         var views = [CardView]()
         for index in 0..<2 {
             views.append(CardView(honeymoon: honeymoonData[index]))
         }
         return views
     }()
+    
+    //MARK: - MOVE THE CARD
+    private func moveCards(){
+        cardViews.removeFirst()
+        self.lastCardIndex += 1
+        let honeymoon = honeymoonData[lastCardIndex % honeymoonData.count]
+        let newCardView = CardView(honeymoon: honeymoon)
+        cardViews.append(newCardView )
+    }
+
     
     //MARK: - TOP CARD
     private func isTopCard(cardView: CardView)-> Bool{
@@ -105,6 +118,14 @@ struct ContentView: View {
                                     break
                                 }
                             })
+                                .onEnded({ (value) in
+                                    guard case .second(true, let drag?) = value else {
+                                        return
+                                    }
+                                    if drag.translation.width < -self.dragAreaThreshold || drag.translation.width > self.dragAreaThreshold{
+                                        self.moveCards()
+                                    }
+                                })
                         )
                         
                 }//: LOOP
