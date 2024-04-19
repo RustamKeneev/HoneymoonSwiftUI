@@ -11,12 +11,15 @@ struct HeaderView: View {
     //MARK: - PROPERTIES
     @Binding var showGuedeView: Bool
     @Binding var showInfoView: Bool
-    
+    let haptics = UINotificationFeedbackGenerator()
+
 
     var body: some View {
         HStack {
             Button(action: {
                 //ACTION
+                playSound(sound: "sound-click", type: "mp3")
+                self.haptics.notificationOccurred(.success)
                 self.showInfoView.toggle()
                 print("Info")
             }){
@@ -36,6 +39,8 @@ struct HeaderView: View {
             Button(action: {
                 //ACTION
                 print("Guid")
+                playSound(sound: "sound-click", type: "mp3")
+                self.haptics.notificationOccurred(.success)
                 self.showGuedeView.toggle()
             }){
                 Image(systemName: "questionmark.circle")
@@ -51,11 +56,7 @@ struct HeaderView: View {
 }
 
 
-//#Preview {
-//    @State var showGuide: Bool = false
-//    HeaderView(showGuedeView: $showGuide)
-//        .previewLayout(.fixed(width: 376, height: 80))
-//}
+
 
 struct HeaderView_Previews: PreviewProvider {
     static var previews: some View {
