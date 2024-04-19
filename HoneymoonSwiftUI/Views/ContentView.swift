@@ -17,6 +17,7 @@ struct ContentView: View {
     private var dragAreaThreshold: CGFloat = 65.0
 
     @State private var lastCardIndex: Int = 1
+    @State private var cardRemovalTransation = AnyTransition.trailingBottom
  
     
     //MARK: - CARD VIEWS
@@ -118,6 +119,17 @@ struct ContentView: View {
                                     break
                                 }
                             })
+                                .onChanged({ (value) in
+                                    guard case .second(true, let drag?) = value else {
+                                        return
+                                    }
+                                    if drag.translation.width < -self.dragAreaThreshold{
+                                        self.cardRemovalTransation = .leadingBottom
+                                    }
+                                    if drag.translation.width > self.dragAreaThreshold{
+                                        self.cardRemovalTransation = .trailingBottom
+                                    }
+                                })
                                 .onEnded({ (value) in
                                     guard case .second(true, let drag?) = value else {
                                         return
@@ -127,7 +139,7 @@ struct ContentView: View {
                                     }
                                 })
                         )
-                        
+                        .transition(self.cardRemovalTransation)
                 }//: LOOP
             }//: ZSTACK
             .padding(.horizontal)
